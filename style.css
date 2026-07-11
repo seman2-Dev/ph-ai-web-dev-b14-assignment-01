@@ -1,37 +1,47 @@
-*{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            display: -ms-flexbox;
         }
         .navbar{
             display: flex;
             background-color: rgb(245, 240, 234);
             justify-content: space-between;
             align-items: center;
-            padding: 10px 40px;
+            padding: 15px 40px;
         }
         nav ul{
             display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 30px;
         }
         nav ul li a{
             text-decoration: none;
             color: black;
+            font-weight: 400;
         }
         .hero{
             display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
             background-image: url("./images/banner.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
             color: white;
-            min-height: 50vh;
-            margin: 0 0 40px;
+            min-height: 60vh;
+            padding: 40px 20px;
+            margin-bottom:40px;
+            position: relative;
+        }
+        .hero::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.4);
         }
         .hero-text{
             position: relative;
@@ -48,13 +58,12 @@
         .speakers{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            background-color: aliceblue;
-            gap: 20px;
+            background-color: white;
+            gap: 25px;
             padding: 20px;
-            border-radius: 15px;
         }
         .speaker{
-            background-color: rgb(229, 235, 240);
+            background-color: whitesmoke;
             padding: 20px;
             border: 2px solid rgb(218, 217, 217);
             border-radius: 9px;
@@ -62,66 +71,88 @@
         .speaker img{
             border-radius: 9px;
             width: 100%;
-          
+            object-fit: cover;
         }
-        h2{
+        h2, .card-head{
             text-align: center;
+            font-size: 2re;
+            
+        }
+        .card-section{
+            max-width: 1200px;
+            margin: 100px auto 60px;
+            padding: 0 20px;
+        }
+        .card-head{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .card-head p{
+            color: #64748b;
+            font-size: xx-small;
         }
         .cards{
             display: flex;
-            border-radius: 5px;
             justify-content: center;
-            gap: 20px;
-            
+            align-items: stretch;
+            gap: 25px;
         }
-        .card{
+        .card, .card-pro{
             background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            padding: 20px 20px 20px 40px;
-
         }
         .card-pro{
-            background-color: rgb(3, 3, 3);
+            background-color: #0f172a; 
             color: white;
-            border: 1px solid black;
-            border-radius: 9px;
-            padding: 20px  20px 20px 40px;
+            border: 2px solid #215bf8;
+        }
+        .cards ul{
+            padding-left: 20px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         .cards button{
             width: 100%;
-            padding: 10px 20px;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: white;
         }
         .blue-btn{
-            background-color: #215bf8;
+            background-color: #215bf8 !important;
             color: white;
             border-radius: 4px;
             padding: 10px 20px;
             border-style: none;
             cursor: pointer;
         }
-        #get-btn{
-            border-color: #215bf8;
-        }
-        .footer-container {
+        .footer-box{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0 auto;
+            margin: auto;
             padding: 0 20px;
         }
-        .footer-social a {
-            color: #fff;
+        .footer-social a{
+            color: black;
             margin-left: 15px;
-            font-size: 20px;
+            font-size: 25px;
         }
-        .divider{
-            border: 0;
-            border-top: 1px solid #555;
-            margin: 20px 0;
-        }
-        .footer-bottom {
+        .footer-bottom{
             text-align: center;
             font-size: 14px;
         }
+        .blue-text{
+            color: rgb(3, 68, 247);
+        }
+ 
+
