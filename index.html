@@ -10,28 +10,34 @@
 </head>
 <body>
     <header>
+
+        <!-- Navigation bar Section -->
+
         <nav class="navbar">
             <div><img src="./images/logo.png" alt=" Website Icon"></div>
             <ul>
-                <li><a href="">Speaker</a></li>
-                <li><a href="">Schedule</a></li>
-                <li><a href="">Tracks</a></li>
-                <li><a href="">Venue</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Tracks</a></li>
+                <li><a href="#">Venue</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
             <button class="blue-btn">Register Now</button>
         </nav>
+
+        <!-- Banner (Hero) Section -->
 
         <section class="hero">
             <div class="hero-child">
                 <div class="hero-text">
                 <h1>Code. <em>Connect</em>. Create</h1>
-                <p>Join 4,000+ engineers, founders and builds at the primer developer <br> conference of 2026.Three days of cutting-edge talks, hands-on workers <br> and meaningful connections.</p>
+                <p>Join 4,000+ engineers, founders and builders at the premier developer <br> conference of 2026. Three days of cutting-edge talks, hands-on workshops <br> and meaningful connections.</p>
                 <div><button class="blue-btn">Register Now</button></div>
                 </div>
             </div>
         </section>
     </header>
+
+    <!-- Meet the Speakers Section -->
 
     <section  class="speaker-section">
         <h2>Meet the Speakers</h2>
@@ -41,7 +47,7 @@
                 <div class="speaker-descrip">
                     <p class="blue-text">AI/ML</p>
                     <h3>Andrej Karpathy</h3>
-                <p class="small-para">Pretraining team, Anthorpic</p>
+                    <p class="small-para">Pre-training team, Anthropic</p>
                 </div>
             </div>
 
@@ -73,6 +79,8 @@
             </div>
         </div>
     </section>
+
+    <!--  Secure Your Spot (Pricing) Section -->
 
     <section class="card-section">
         <div class="card-head">
@@ -145,31 +153,65 @@
         </div>
     </section>
 
-    <section class="ai-challenge-section">
-        <div class="challenge-container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-circle-question"></i> Is the event hybrid or in-person?</h4>
-                    <p>DEVCONF 2026 is strictly an in-person event in San Francisco to maximize networking and hands-on workshop experiences.</p>
+    <!-- Unique AI Challenge: Job Board Section Start -->
+     <!-- Upgraded DevConf 2026 Job Board Section -->
+<div class="job-board-wrapper">
+    <div class="job-board-header-block">
+        <span class="live-pulse-badge"><span class="pulse-dot"></span> Live Handoff: Onsite Matchmaking</span>
+        <h2 class="section-title-center">DevConf 2026 Job Board</h2>
+        <p class="section-subtitle-center">Skip the online stack. Hand your resume directly to engineering managers at our booth pavilions.</p>
+    </div>
+    
+    <div class="job-grid">
+        <!-- Job Card 1: Standard Premium -->
+        <div class="job-card">
+            <div class="job-card-inner">
+                <div class="job-header">
+                    <div class="tag-group">
+                        <span class="job-tag tech-tag">Frontend</span>
+                        <span class="job-tag structural-tag">Onsite</span>
+                    </div>
+                    <span class="job-salary">$125k - $155k</span>
                 </div>
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-circle-question"></i> Can I get a refund if I can't attend?</h4>
-                    <p>Full refunds are available up to 14 days before the event. Within 14 days, you can transfer your ticket to a colleague.</p>
+                <h3>Senior Frontend Engineer</h3>
+                <div class="company-meta">
+                    <span class="company-name">Vercel</span>
+                    <span class="meta-divider">•</span>
+                    <span class="company-location"><i class="fa-solid fa-location-dot"></i> San Francisco / Booth 104</span>
                 </div>
+                <p class="job-desc">Work closely with the Next.js core team to build hyper-scalable web architectures and optimize edge rendering workflows.</p>
             </div>
-
-            <div class="newsletter-box">
-                <h3>Stay in the Loop</h3>
-                <p>Can't make it this year? Subscribe to get key announcements, session recordings, and updates for DEVCONF 2027.</p>
-                <form class="newsletter-form" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Enter your developer email" required>
-                    <button type="submit" class="blue-btn">Subscribe</button>
-                </form>
+            <div class="job-footer">
+                <a href="#" class="job-apply-btn">Drop Resume <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
             </div>
         </div>
-    </section>
 
+        <!-- Job Card 2: Ultra Featured AI Design -->
+        <div class="job-card featured-ai-job">
+            <div class="job-card-inner">
+                <div class="job-header">
+                    <div class="tag-group">
+                        <span class="job-tag ai-tag">AI & ML</span>
+                        <span class="job-tag premium-tag"><i class="fa-solid fa-bolt"></i> Fast Track</span>
+                    </div>
+                    <span class="job-salary">$170k - $210k</span>
+                </div>
+                <h3>AI Agents Architect</h3>
+                <div class="company-meta">
+                    <span class="company-name highlight-blue">Microsoft AI</span>
+                    <span class="meta-divider">•</span>
+                    <span class="company-location"><i class="fa-solid fa-location-dot"></i> Redmond, WA / Pavilion A</span>
+                </div>
+                <p class="job-desc">Design autonomous LLM orchestrations, multi-agent frameworks, and fine-tune open-source models for highly parallel production execution states.</p>
+            </div>
+            <div class="job-footer">
+                <a href="#" class="job-apply-btn special-btn">Priority Application <i class="fa-solid fa-bolt-lightning"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer section -->
     <footer class="footer">
         <div class="footer-box">
             <div class="footer-logo">
@@ -177,9 +219,9 @@
             </div>
 
             <div class="footer-social">
-                <a href="#"><i class="fa-brands fa-facebook-f" style="color: rgb(116, 192, 252);"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(240, 9, 9);"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter" style="color: rgb(9, 9, 9);"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f" style="color: blue;"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: rgb(240, 9, 9);"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a>
             </div>
         </div>
         <hr>
