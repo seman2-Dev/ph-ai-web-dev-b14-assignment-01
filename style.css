@@ -11,7 +11,7 @@
             background-color: rgb(245, 240, 234);
             justify-content: space-between;
             align-items: center;
-            padding: 15px 40px;
+            padding: 15px 20px;
         }
         nav ul {
             display: flex;
@@ -326,6 +326,7 @@
 
         .footer {
             background-color: #5682fd;
+            height: 50px;
         }
         .footer-box {
             display: flex;
@@ -342,9 +343,19 @@
         .footer-bottom {
             text-align: center;
             font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .footer-bottom ul {
+            list-style: none;
+        }
+        .footer-bottom ul li a {
+            text-decoration: none ;
         }
         .footer p {
-            color: rgb(255, 45, 45);
+            color: rgb(255, 0, 0);
+            font-weight: 500;
         }
 
 
